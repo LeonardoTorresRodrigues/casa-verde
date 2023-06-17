@@ -3,8 +3,10 @@
 :root {
   --background-white: #FFFFFF;
   --background-black: #000000;
+  --background-yellow: #FFCB47;
   --font-black: #202020;
   --font-yellow: #FFCB47;
+  --font-white: #FFFFFF;
 
   --ff-title: 'Elsie Swash Caps', cursive;
   --ff-text: 'Montserrat', sans-serif;
