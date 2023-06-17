@@ -5,7 +5,6 @@ import Logo from '../../assets/logo.svg';
 const Menu = styled.header`
 	width: 75.188rem;
 	height: 3.053rem;
-	background-color: grey;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-around;
@@ -18,8 +17,15 @@ const LinksList = styled.ul`
 	gap: 1rem;
 	
 	li, a {
+		font-family: var(--ff-text);
+		font-weight: var(--fw-text);
+		font-size: 16px;
+		line-height: 20px;
+
 		text-decoration: none;
 		list-style-type: none;
+		
+		color: var(--font-black);
 	}
 `;
 
@@ -30,16 +36,16 @@ export default function Header() {
 				<Logo />
 				<LinksList>
 					<li>
-						<a href="">Como fazer</a>
+						<a href="">Como fazer /</a>
 					</li>
 					<li>
-						<a href="">Ofertas</a>
+						<a href="">Ofertas /</a>
 					</li>
 					<li>
-						<a href="">Depoimentos</a>
+						<a href="">Depoimentos /</a>
 					</li>
 					<li>
-						<a href="">Videos</a>
+						<a href="">Videos /</a>
 					</li>
 					<li>
 						<a href="">Meu carrinho</a>
