@@ -2,10 +2,10 @@
 
 Criado durante o 7DaysOfCode React
 
-## O desafio do primeiro dia foi:
+## O desafio do 1° dia:
 1. Criar o componente de Menu
 2. Criar o componente de Assinatura da newsletter
-## Desafio do segundo dia foi:
+## Desafio do 2° dia:
 1. Utilizar o styled components
   
 > Optei por usar styled component desde o início
