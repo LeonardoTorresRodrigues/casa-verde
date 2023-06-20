@@ -1,6 +1,6 @@
 # Casa Verde
 
-Criado durante o 7DaysOfCode React
+Criado durante o 7DaysOfCode React da Alura
 
 ## Desafio do 1° dia:
 1. Criar o componente de Menu
