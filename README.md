@@ -2,7 +2,7 @@
 
 Criado durante o 7DaysOfCode React
 
-## O desafio do 1° dia:
+## Desafio do 1° dia:
 1. Criar o componente de Menu
 2. Criar o componente de Assinatura da newsletter
 ## Desafio do 2° dia:
