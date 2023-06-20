@@ -8,4 +8,4 @@ Criado durante o 7DaysOfCode React
 ## Desafio do segundo dia foi:
 1. Utilizar o styled components
   
-  `optei por usar styled component desde o início`
+> Optei por usar styled component desde o início
