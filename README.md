@@ -15,6 +15,6 @@ Deixe sua casa mais verde com plantas decorativas.
 ## Desafio do 2° dia:
 1. Utilizar o styled components
   
-> Optei por usar styled component desde o início
+> Optei por usar styled components desde o início
 
 *Criado durante o #7DaysOfCode React da Alura* 
