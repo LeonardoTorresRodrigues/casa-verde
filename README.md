@@ -1,6 +1,6 @@
 # Casa Verde
 
-Deixe sua casa mais verde com plantas decorativas.
+Página para loja de plantas decorativas.
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
