@@ -92,7 +92,7 @@ export default function Newsletter() {
 				<p>Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torna-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
 			</NewsletterText>
 			<NewsletterForm>
-				<input type="text" placeholder='Insira seu e-mail' />
+				<input type="email" placeholder='Insira seu e-mail' />
 				<button>Assinar newsletter</button>
 			</NewsletterForm>
 		</NewsletterContainer>
