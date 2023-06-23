@@ -41,7 +41,7 @@ const NewsletterText = styled.div`
 	opacity: 0.5;
 `;
 
-const NewsletterInput = styled.div`
+const NewsletterForm = styled.form`
 	width: 36.563rem;
 	height: 4.688rem;
 
@@ -91,10 +91,10 @@ export default function Newsletter() {
 			<NewsletterText>
 				<p>Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torna-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
 			</NewsletterText>
-			<NewsletterInput>
+			<NewsletterForm>
 				<input type="text" placeholder='Insira seu e-mail' />
 				<button>Assinar newsletter</button>
-			</NewsletterInput>
+			</NewsletterForm>
 		</NewsletterContainer>
 	);
 }
