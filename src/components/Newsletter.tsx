@@ -22,7 +22,7 @@ const NewsletterTitle = styled.div`
 		opacity: 0.5;
 	}
 	
-	h2 {
+	h1 {
 		font-family: var(--ff-title);
 		font-weight: var(--fw-title);
 		font-size: 82px;
@@ -86,7 +86,7 @@ export default function Newsletter() {
 		<NewsletterContainer>
 			<NewsletterTitle>
 				<p>Sua casa com as</p>
-				<h2>melhores plantas</h2>
+				<h1>melhores plantas</h1>
 			</NewsletterTitle>
 			<NewsletterText>
 				<p>Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torna-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
