@@ -5,7 +5,7 @@ Deixe sua casa mais verde com plantas decorativas.
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
 | :sparkles: Nome        | **Casa Verde**
-| :label: Tecnologias | Next.JS, React
+| :label: Tecnologias | React, Next.JS, Styled-Components
 | :rocket: URL         | Em breve 🚧
 | :fire: Desafio     | [https://url-do-desafio.com.br](https://7daysofcode.io/)
 
