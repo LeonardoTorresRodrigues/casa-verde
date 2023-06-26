@@ -1,5 +1,5 @@
 import 'normalize.css';
-import Header from '@/components/Header';
+import Menu from '@/components/Menu';
 import React from 'react';
 import styled from 'styled-components';
 import Newsletter from '@/components/Newsletter';
@@ -15,7 +15,7 @@ export default function Home() {
 	return (
 		<>
 			<HomePage>
-				<Header />
+				<Menu />
 				<Newsletter />
 			</HomePage>
 		</>
