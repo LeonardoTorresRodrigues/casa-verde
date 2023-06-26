@@ -57,8 +57,6 @@ const NewsletterTitle = styled.div`
 				font-size: 82px;
 			}
 		}
-
-	
 `;
 
 const NewsletterText = styled.div`
