@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const NewsletterContainer = styled.div`
@@ -136,6 +136,15 @@ const NewsletterForm = styled.div`
 `;
 
 export default function Newsletter() {
+	const [email, setEmail] = useState('');
+	const [emailAlert, setEmailAlert] = useState('');
+
+	const handleSubscribe = (event: React.FormEvent<HTMLFormElement>) => {
+		event.preventDefault();
+		setEmailAlert(`Obrigado pela sua assinatura, você receberá nossas novidades no e-mail ${email}`);
+		setEmail('');
+	};
+
 	return (
 		<NewsletterContainer>
 			<NewsletterContainerText>
@@ -151,12 +160,17 @@ export default function Newsletter() {
 					<p>Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torna-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
 				</NewsletterText>
 			</NewsletterContainerText>
-			<form action="/">
+			<form action="/" onSubmit={handleSubscribe}>
 				<NewsletterForm>
-					<input type="email" placeholder='Insira seu e-mail' />
-					<button>Assinar newsletter</button>
+					<input type="email"
+						placeholder='Insira seu e-mail'
+						value={email}
+						onChange={(event) => setEmail(event.target.value)}
+					/>
+					<button type="submit">Assinar newsletter</button>
 				</NewsletterForm>
 			</form>
+			{emailAlert && <p>{emailAlert}</p>}
 		</NewsletterContainer>
 	);
 }
