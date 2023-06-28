@@ -135,6 +135,49 @@ const NewsletterForm = styled.div`
 	}
 `;
 
+const BlurBackground = styled.div`
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(8px);
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`;
+
+const EmailAlertWrapper = styled.div`
+	width: 30rem;
+	height: 15rem;
+	background-color: var(--background-white);
+	padding: 1rem;
+	border-radius: 8px;
+	text-align: center;
+`;
+
+const CloseButton = styled.button`
+	color: var(--font-black);
+	background-color: var(--background-yellow);
+	box-shadow: 10px 10px 30px 0px #ffcb474d;
+	border-radius: 3px;
+	border: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+
+	:hover {
+		color: var(--font-white);
+	}
+`;
+
+const EmailAlert = styled.p`
+	text-align: center;
+	font-size: 32px;
+`;
+
 export default function Newsletter() {
 	const [email, setEmail] = useState('');
 	const [emailAlert, setEmailAlert] = useState('');
@@ -146,31 +189,42 @@ export default function Newsletter() {
 	};
 
 	return (
-		<NewsletterContainer>
-			<NewsletterContainerText>
-				<NewsletterTitle>
-					<h1>Sua casa com as
-						<br />
-						<strong>
-							melhores plantas
-						</strong>
-					</h1>
-				</NewsletterTitle>
-				<NewsletterText>
-					<p>Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torna-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
-				</NewsletterText>
-			</NewsletterContainerText>
-			<form action="/" onSubmit={handleSubscribe}>
-				<NewsletterForm>
-					<input type="email"
-						placeholder='Insira seu e-mail'
-						value={email}
-						onChange={(event) => setEmail(event.target.value)}
-					/>
-					<button type="submit">Assinar newsletter</button>
-				</NewsletterForm>
-			</form>
-			{emailAlert && <p>{emailAlert}</p>}
-		</NewsletterContainer>
+		<>
+			<NewsletterContainer>
+				<NewsletterContainerText>
+					<NewsletterTitle>
+						<h1>Sua casa com as
+							<br />
+							<strong>
+								melhores plantas
+							</strong>
+						</h1>
+					</NewsletterTitle>
+					<NewsletterText>
+						<p>Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torna-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
+					</NewsletterText>
+				</NewsletterContainerText>
+				<form action="/" onSubmit={handleSubscribe}>
+					<NewsletterForm>
+						<input type="email"
+							placeholder='Insira seu e-mail'
+							value={email}
+							onChange={(event) => setEmail(event.target.value)}
+						/>
+						<button type="submit">Assinar newsletter</button>
+					</NewsletterForm>
+				</form>
+			</NewsletterContainer>
+			{
+				emailAlert && (
+					<BlurBackground>
+						<EmailAlertWrapper>
+							<CloseButton onClick={() => setEmailAlert('')}>Fechar</CloseButton>
+							<EmailAlert>{emailAlert}</EmailAlert>
+						</EmailAlertWrapper>
+					</BlurBackground>
+				)
+			}
+		</>
 	);
 }
