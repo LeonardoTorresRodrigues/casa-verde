@@ -12,9 +12,13 @@ Página para loja de plantas decorativas.
 ## Desafio do 1° dia:
 1. Criar o componente de Menu
 2. Criar o componente de Assinatura da newsletter
+
 ## Desafio do 2° dia:
 1. Utilizar o styled components
-  
 > Optei por usar styled components desde o início
+
+## Desafio do 3° dia:
+1. Checar se o e-mail do usuário é valido
+2. Tela com mensagem ao clicar no botão de cadastro 
 
 *Criado durante o #7DaysOfCode React da Alura* 
