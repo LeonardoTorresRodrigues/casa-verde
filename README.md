@@ -15,7 +15,6 @@ Página para loja de plantas decorativas.
 
 ## Desafio do 2° dia:
 1. Utilizar o styled components
-> Optei por usar styled components desde o início
 
 ## Desafio do 3° dia:
 1. Checar se o e-mail do usuário é valido
