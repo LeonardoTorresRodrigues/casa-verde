@@ -13,11 +13,9 @@ const HomePage = styled.main`
 
 export default function Home() {
 	return (
-		<>
-			<HomePage>
-				<Menu />
-				<Newsletter />
-			</HomePage>
-		</>
+		<HomePage>
+			<Menu />
+			<Newsletter />
+		</HomePage>
 	);
 }
