@@ -12,9 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 
   @media(min-width: 920px) {
     body {
-      background-image: url('/images/body-shape.svg');
-      background-repeat: no-repeat, repeat-x;
-      background-position: right top;
+      
     }
   }
 `;
