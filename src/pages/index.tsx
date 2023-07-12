@@ -3,6 +3,7 @@ import Menu from '@/components/Menu';
 import React from 'react';
 import styled from 'styled-components';
 import Newsletter from '@/components/Newsletter';
+import MainCard from '@/components/MainCard';
 
 const HomePage = styled.main`
 	max-width: 75rem;
@@ -16,6 +17,7 @@ export default function Home() {
 		<HomePage>
 			<Menu />
 			<Newsletter />
+			<MainCard />
 		</HomePage>
 	);
 }
