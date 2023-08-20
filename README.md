@@ -7,7 +7,7 @@ Página para loja de plantas decorativas.
 | :sparkles: Nome        | **Casa Verde**
 | :label: Tecnologias | React, Next.JS, Styled-Components
 | :rocket: URL         | Em breve 🚧
-| :fire: Desafio     | [https://url-do-desafio.com.br](https://7daysofcode.io/)
+| :fire: Desafio     | https://7daysofcode.io/
 
 ## Desafio do 1° dia:
 1. Criar o componente de Menu
